@@ -1,0 +1,70 @@
+chambi-pwa/
+├── .gitignore              # Especifica los archivos y carpetas que Git debe ignorar
+├── README.md               # Documentación del proyecto (actualizar con la nueva información)
+├── package.json            # Dependencias y scripts del proyecto
+├── package-lock.json       # Registro de las versiones exactas de las dependencias
+├── .env                    # Variables de entorno (ej. API keys)
+├── public/
+│   ├── index.html          # HTML principal de la aplicación
+│   ├── manifest.json       # Manifiesto de la PWA (configurar con los datos de Chambi)
+│   ├── robots.txt          # Archivo para controlar el rastreo web
+│   ├── favicon.ico         # Favicon de la aplicación
+│   └── logo192.png         # Íconos de la aplicación en diferentes tamaños
+│   └── logo512.png         # (generados por CRA, reemplazar con los de Chambi)
+└── src/
+    ├── api/
+    │   ├── firebase.js     # Configuración e inicialización de Firebase (JS)
+    │   └── geolocation/
+    │       └── index.js    # Hook para la geolocalización (JS)
+    ├── assets/
+    │   ├── fonts/
+    │   │   └── *.ttf        # Fuentes personalizadas
+    │   ├── icons/
+    │   │   └── *.svg        # Íconos en formato SVG
+    │   └── images/
+    │       └── logo.png    # Logo de la aplicación
+    ├── components/
+    │   ├── auth/
+    │   │   ├── LoginForm.jsx    # Formulario de inicio de sesión
+    │   │   └── RegisterForm.jsx # Formulario de registro
+    │   ├── common/
+    │   │   ├── Button.jsx    # Componente de botón reutilizable
+    │   │   ├── Card.jsx      # Componente de tarjeta reutilizable
+    │   │   ├── Input.jsx     # Componente de campo de entrada reutilizable
+    │   │   ├── Modal.jsx     # Componente de modal reutilizable
+    │   │   ├── NavBar.jsx    # Barra de navegación
+    │   │   └── Footer.jsx     # Pie de página
+    │   ├── home/
+    │   │   └── SearchBar.jsx # Barra de búsqueda con filtros
+    │   ├── profile/
+    │   │   ├── EditProfile.jsx  # Formulario para editar el perfil
+    │   │   └── ProfileCard.jsx  # Tarjeta de presentación del perfil
+    │   ├── services/
+    │   │   ├── ServiceCard.jsx  # Tarjeta de presentación de un servicio
+    │   │   └── ServiceDetails.jsx # Detalles de un servicio
+    │   └── map/
+    │       └── Map.jsx          # Componente para el mapa interactivo
+    ├── context/
+    │   └── AuthContext.js    # Contexto para la autenticación (JS)
+    ├── hooks/
+    │   ├── useAuth.js        # Hook personalizado para la autenticación (JS)
+    │   ├── useSearch.js      # Hook personalizado para la búsqueda (JS)
+    ├── routes/
+    │   └── AppRouter.jsx     # Gestión de rutas de la aplicación
+    ├── services/
+    │   ├── authService.js    # Servicio para la autenticación (JS)
+    │   ├── searchService.js  # Servicio para la búsqueda (JS)
+    │   └── userService.js    # Servicio para la gestión de usuarios (JS)
+    ├── styles/
+    │   ├── base.css        # Estilos generales, tipografía fluida, resets
+    │   ├── components.css  # Estilos específicos para componentes
+    │   └── utilities.css   # Clases de utilidad para estilos
+    ├── utils/
+    │   ├── constants.js    # Constantes globales (ej. lista de ciudades) (JS)
+    │   └── helpers.js      # Funciones de ayuda (ej. calcular distancia) (JS)
+    ├── App.jsx             # Componente raíz de la aplicación
+    ├── App.test.js          # Pruebas para el componente App (JS)
+    ├── index.js            # Punto de entrada de la aplicación
+    ├── reportWebVitals.js   # Para medir el performance (JS)
+    ├── setupTests.js       # Configuración de pruebas (JS)
+    └── serviceWorkerRegistration.js # Registro del Service Worker (JS)
